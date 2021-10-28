@@ -12,17 +12,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+
+ <!-- Google Font: Poppins -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+
+ <!-- Select2 -->
+ <link rel="stylesheet" href="./../public/plugins/select2/css/select2.min.css">
+
+ <!-- Estilo icones -->
+ <link rel="stylesheet" href="../public/plugins/fontawesome-free/css/all.min.css">
  
-
-  <!-- Select2 -->
-  <link rel="stylesheet" href="./../public/plugins/select2/css/select2.min.css">
-
-  <!-- Estilo icones -->
-  <link rel="stylesheet" href="../public/plugins/fontawesome-free/css/all.min.css">
-  
-  <!-- Estilo pagina -->
-  <link rel="stylesheet" href="./../public/dist/css/adminlte.min.css">
-
+ <!-- Estilo pagina -->
+ <link rel="stylesheet" href="./../public/dist/css/adminlte.min.css">
 
 </head>
 <body class="hold-transition sidebar-mini">
@@ -38,7 +43,7 @@
         </a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="" class="nav-link">Perfil</a>
+        <a href="" class="nav-link">Supervisor CIVA</a>
       </li>
     </ul>
   </nav>
@@ -74,7 +79,7 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- ITENS DO MENU -->
           <li class="nav-item">
-            <a href="_index_supervisor.html" class="nav-link">
+            <a href="indexsupervisor.html" class="nav-link">
               <i class="nav-icon fas fa-home"></i>
               <p>
                 Home 
@@ -82,16 +87,15 @@
             </a> 
           </li>
           <!-- ITEM GERENCIAR USUARIO DO MENU -->
-          <li class="nav-item">
-            <a href="#" class="nav-link ">
+          <li class="nav-item  menu-open">
+            <a href="#" class="nav-link active">
               <!-- <i class="nav-icon fas fa-user-friends"></i> -->
               <p>SUPERVISOR   
                 <i class="right fas fa-angle-left"></i>
-                
               </p>
             </a>
             <ul class="nav nav-treeview">
-              <li class="nav-item ">
+              <li class="nav-item menu-open">
                 <a href="#" class="nav-link"> 
                   <i class="fas fa-user-friends nav-icon"></i>
                   <p>
@@ -101,13 +105,13 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="_ui043.html" class="nav-link">
+                    <a href="ui043.html" class="nav-link ">
                       <i class="fas fa-clipboard-check nav-icon"></i>
                       <p>Consultar Profissional </p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="_ui044.html" class="nav-link">
+                    <a href="ui044.html" class="nav-link active">
                       <i class="fas fa-user-plus nav-icon"></i>
                       <p>Cadastrar Profissional </p>
                     </a>
@@ -129,7 +133,7 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="_ui049.html" class="nav-link">
+                    <a href="ui049.html" class="nav-link  active">
                       <i class="fas fa-clipboard-check nav-icon"></i>
                       <p>Consultar Unidade </p>
                     </a>
@@ -137,12 +141,9 @@
                 </ul>
               </li>
             </ul>
-
-            
-  
           <!-- ITEM RELATORIO USUARIO DO MENU -->
           <li class="nav-item">
-            <a href="_relatorio_supervisor.html" class="nav-link">
+            <a href="relatoriosupervisor.html" class="nav-link">
               <i class="nav-icon fas fa-chart-pie"></i>
               <p>
                 Relatorio
@@ -151,8 +152,8 @@
           </li>
 
           <!-- ITEM PERFIL DO MENU -->
-          <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
+          <li class="nav-item">
+            <a href="#" class="nav-link">
               <i class="nav-icon fas fa-user-circle"></i>
               <p>
                 Perfil
@@ -162,7 +163,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="_meus_dados_supervisor.html" class="nav-link active">
+                <a href="meusdadossupervisor.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i> 
                   <p>
                     Meus dados
@@ -170,7 +171,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="_idioma.html" class="nav-link"> 
+                <a href="idioma.html" class="nav-link"> 
                   <i class="far fa-circle nav-icon"></i>
                   <p>
                     Mudar Idioma
@@ -178,7 +179,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="_manual.html" class="nav-link"> 
+                <a href="manual.html" class="nav-link"> 
                   <i class="far fa-circle nav-icon"></i>
                   <p>
                     Manual CIVA
@@ -186,7 +187,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="_solicitacoes_supervisor.html" class="nav-link"> 
+                <a href="solicitacoessupervisor.html" class="nav-link"> 
                   <i class="far fa-circle nav-icon"></i>
                   <p>
                     Solicitações pendentes
@@ -220,13 +221,13 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Meus dados</h1>
+            <h1 class="m-0">Cadastrar Profissional de Saúde</h1>
           </div><!-- /.col -->
 
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Voltar</a></li>
-              <li class="breadcrumb-item active">Meus dados</li>
+              <li class="breadcrumb-item active">Cadastrar Profissional de Saude</li>
             </ol>
           </div>
         </div><!-- /.row -->
@@ -246,200 +247,148 @@
         <!---------------------------------------------------------------->
 
 
-
 <div class="row">
-  <div class="col-12 mb-3">
-  
-  
+<div class="col-12">
+          
+          
 <div class="card card-primary">
 <div class="card-header">
-  <h3 class="card-title">Meus dados</h3>
+<h3 class="card-title">Dados Profissional de Saúde</h3>
 </div>
 <!-- /.card-header -->
 <!-- form start -->
-<form id="form-meus-dados">
-    <div class="p-2">
-    <div class="row">
-        <div class="form-group col-xl-6">
-            <label for="exampleFormControlInput1">Nome</label>
-            <input type="text" class="form-control" value="Frank" id="name">
-        </div>
-        <div class="form-group col-xl-6">
-            <label for="exampleFormControlInput1">Sobrenome</label>
-            <input type="text" class="form-control" value="Sinatra" id="surname"  >
-        </div>
-    </div>
-    <div class="row">
-      <div class="form-group col-xl-6">
-        <label for="exampleFormControlInput1">Data de nascimento</label>
-        <input type="date" class="form-control" id="date-birth" value="1915-11-12">
-    </div>
-        <div class="form-group col-xl-6">
-            <label for="exampleFormControlInput1">Identidade</label>
-            <input type="text" class="form-control" id="identity" value="133.489.458-07" disabled>
-        </div>
-    </div>
-    <div class="row">
-      <div class="form-group col-xl-6">
-        <label for="exampleFormControlSelect1">Nacionalidade</label>
-        <select class="select2 select2-hidden-accessible" id="nacionality" style="width: 100%;" tabindex="-1" aria-hidden="true">
-          <option value="2" selected>Brasil</option>
-          <option value="3">Eua</option>
-          <option value="3">Canada</option>
-      </select>
-    </div>
-    <div class="form-group col-xl-6">
-      <label for="exampleFormControlInput1">Código CIVA</label>
-      <input type="text" class="form-control" id="civa-code" value="BRA5513456789" disabled>
-    </div>
-    </div>
-  <hr>
-    <div class="row">
-        <div class="form-group col-xl-6">
-            <label for="exampleFormControlInput1">CEP</label>
-            <input type="text" class="form-control" id="postal-code" value="20520-054">
-        </div>
-    </div>
-    <div class="row"> 
-      <div class="form-group col-12">
-        <label for="exampleFormControlSelect1">Logradouro</label>
-          <label for="exampleFormControlInput1"></label>
-          <input type="text" class="form-control" id="logrd-name" value="Rua Conde de Bonfim">
-      </div>
+<form id="form-meus-dados" action="#">
+<div class="p-2">
+<div class="row">
+  <div class="form-group col-xl-6">
+      <label for="exampleFormControlInput1">Nome</label>
+      <input type="text" class="form-control" id="name">
   </div>
-    <div class="row">
-          <div class="form-group col-xl-6">
-      <label for="exampleFormControlSelect1">Bairro</label>
-      <select class="select2 select2-hidden-accessible" id="local" style="width: 100%;" tabindex="-1" aria-hidden="true">
-        <option>Vila Isabel</option>
-        <option>Tijuca</option>
-        <option>São Cristovão</option>
-        <option>Barra</option>
-        <option>Botafogo</option>
+  <div class="form-group col-xl-6">
+      <label for="exampleFormControlInput1">Sobrenome</label>
+      <input type="text" class="form-control" id="surname" >
+  </div>
+</div>
+<div class="row">
+<div class="form-group col-xl-6">
+  <label for="exampleFormControlInput1">Data de nascimento</label>
+  <input type="date" class="form-control" id="date-birth" placeholder="00/00/0000">
+</div>
+  <div class="form-group col-xl-6">
+      <label for="exampleFormControlInput1">Identidade</label>
+      <input type="text" class="form-control" id="identity" >
+  </div>
+  <div class="form-group col-xl-6">
+    <label for="exampleFormControlInput1">CRM</label>
+    <input type="text" class="form-control" id="crm" >
+</div>
+</div>
+<div class="row">
+<div class="form-group col-12">
+  <label for="exampleFormControlSelect1">Nacionalidade</label>
+  <select class="select2 select2-hidden-accessible" id="nacionality" style="width: 100%;" tabindex="-1" aria-hidden="true">
+    <option selected disabled>Selecionar</option>
+    <option value="2">Brasil</option>
+    <option value="3">Eua</option>
+    <option value="3">Canada</option>
+</select>
+</div>
+</div>
+<hr>
+<div class="row">
+  <div class="form-group col-12">
+      <label for="exampleFormControlInput1">CEP</label>
+      <input type="text" class="form-control" id="postal-code" onblur="getUser(); return false">
+  </div>
+</div>
+
+<div class="row"> 
+  <div class="form-group col-12">
+    <label for="exampleFormControlSelect1">Logradouro</label>
+      <label for="exampleFormControlInput1"></label>
+      <input type="text" class="form-control" id="logrd-name">
+  </div>
+</div>
+
+
+<div class="row">
+
+
+<div class="form-group col-xl-6">
+<label for="local">Bairro</label>
+<select class="select2 select2-hidden-accessible" id="local" style="width: 100%;" tabindex="-1" aria-hidden="true">
+  <option id="local-option" selected="" disabled="">Selecionar</option> 
+  <option>Niteroi</option>
+  <option>São Gonçalo</option>
+  <option>Rio de Janeiro</option>
+  <option>Itaborai</option>
+  <option>Marica</option>
+</select>
+</div>
+
+
+<div class="form-group col-xl-6">
+  <label for="city">Municipio</label>
+  <select class="select2 select2-hidden-accessible"  id="city" style="width: 100%;" tabindex="-1" aria-hidden="true">
+    <option id="city-option" selected="" disabled="" >Selecionar</option> 
+    <option>Niteroi</option>
+    <option>São Gonçalo</option>
+    <option>Rio de Janeiro</option>
+    <option>Itaborai</option>
+    <option>Marica</option>
+</select>
+</div>
+</div>
+
+<div class="row">
+  <div class="form-group col-12">
+      <label for="state">Estado</label>
+      <select class="select2 select2-hidden-accessible" id="state" style="width: 100%;" tabindex="-1" aria-hidden="true">
+        <option id="state-option" selected="" disabled="">Selecionar</option>
+        <option>Rio de Janeiro</option>
+        <option>São Paulo</option>
+        <option>Minas Gerais</option>
+        <option>Rio Grande do Sul</option>
+        <option>Bahia</option>
     </select>
   </div>
-      <div class="form-group col-xl-6">
-        <label for="exampleFormControlSelect1">Municipio</label>
-        <select class="select2 select2-hidden-accessible" id="city" style="width: 100%;" tabindex="-1" aria-hidden="true">
-          <option>Rio de Janeiro</option>
-          <option>Niteroi</option>
-          <option>São Gonçalo</option>
-          <option>Itaborai</option>
-          <option>Marica</option>
-      </select>
-    </div>
-    
-
-    </div>
-
-    <div class="row">
-        <div class="form-group col-12">
-            <label for="exampleFormControlSelect1">Estado</label>
-            <select class="select2 select2-hidden-accessible" id="state" style="width: 100%;" tabindex="-1" aria-hidden="true">
-              <option selected>Rio de Janeiro</option>
-              <option>São Paulo</option>
-              <option>Minas Gerais</option>
-              <option>Rio Grande do Sul</option>
-              <option>Bahia</option>
-          </select>
-        </div>
-    </div>
-    <hr>
-    <div class="row">
-        <div class="form-group col-xl-6">
-            <label for="exampleFormControlInput1">Contato</label>
-              <input type="text" class="form-control" id="telf" value="21965138761">
-        </div>
-        <div class="form-group col-xl-6">
-            <label for="exampleFormControlInput1">Email</label>
-            <input type="email" class="form-control" id="email" value="franksinatra@gmail.com" disabled>
-        </div>
-    </div>
 </div>
-</div>
+
+<hr>
+<div class="row">
+  <div class="form-group col-xl-6">
+      <label for="exampleFormControlInput1">Contato</label>
+        <input type="text" class="form-control" id="telf">
   </div>
+  <div class="form-group col-xl-6">
+      <label for="exampleFormControlInput1">Email</label>
+      <input type="email" class="form-control" id="email">
+  </div>
+</div>
+</div>
+</div>
+          </div>
+          
+
+            <div class="col-12 mb-4">
+                <button type="submit" class="btn btn-primary btn-lg" form="form-meus-dados">Cadastrar</button>
+            </div>
+        
+          
                   <!-- /.row -->
         </div>
 
-        <!-- TABELA VACINAS -->
-<div class="row">
-  <div class="col-12 mb-2">
-    <div class="card card-primary">
-      <div class="card-header">
-        <h3 class="card-title">Unidade vinculadas</h3>
 
-        <div class="card-tools">
-          <div class="input-group input-group-sm" style="width: 150px;">
-            
-            <div class="input-group-append">
-              
-              
-            </div>
-          </div>
-        </div>
+        <!-- /.row -->
       </div>
-      <!-- /.card-header -->
-      <div class="card-body table-responsive p-0">
-        <table class="table table-hover text-nowrap">
-          <thead>
-            <tr>
-              <th>Nome</th>
-              <th>Estado</th>
-              <th>CEP</th>
-              <th>Identificador</th>
-              
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Hospital Pan</td>
-              <td>Rio de Janeiro</td>
-              <td>12016-102</td>
-              <td>215648</td>
-              
-            </tr>
-            <tr>
-              <td>Hospital Pan</td>
-              <td>Rio de Janeiro</td>
-              <td>12016-102</td>
-              <td>215648</td>
-              
-            </tr>
-            <tr>
-              <td>Hospital Pan</td>
-              <td>Rio de Janeiro</td>
-              <td>12016-102</td>
-              <td>215648</td>
-              
-            </tr>
-            <tr>
-              <td>Hospital Pan</td>
-              <td>Rio de Janeiro</td>
-              <td>12016-102</td>
-              <td>215648</td>
-              
-            </tr>
-          </tbody>
-        </table>
       </div>
-      <!-- /.card-body -->
     </div>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-12 mb-4">
-    <button type="submit" class="btn btn-primary btn-lg" form="form-meus-dados">Salvar</button>
-</div>
-</div>
-
-
-      </div><!-- /.container-fluid -->
-      <div class="modal fade" id="modal-default" style="display: none;" aria-hidden="true">
+    <!-- /.container-fluid -->
+            <div class="modal fade" id="modal-default" style="display: none;" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title">Dados Salvo com sucesso!</h4>
+              <h4 class="modal-title">Cadastro realizado com sucesso!</h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">×</span>
               </button>
@@ -448,26 +397,26 @@
               <p></p>
             </div>
             <div class="modal-footer justify-content-between">
-              <button type="button" class="btn btn-default" data-dismiss="modal" onclick="location.href='./_index_supervisor.html'">Close</button>
+              <button type="button" class="btn btn-default" data-dismiss="modal" onclick="location.href='./indexsupervisor.html'">Close</button>
             </div>
           </div>
+          
           <!-- /.modal-content -->
-        </div>
-        <!-- /.modal-dialog -->
-      </div>
     </div>
+  
     <!-- /.content -->
   </div>
+
   <!-- /.content-wrapper -->
- <!-- Main Footer -->
- <footer class="main-footer">
-  <!-- Default to the left -->
-  <strong><img src="./../public/img/icon-civa-footer-darkblue.svg" alt="logo civa" width="70px">&nbsp by <a href="https://www.forsoftacademy.com.br/" target="_blank">Forsoft Academy</a></strong>
-</footer>
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- Default to the left -->
+    <strong><img src="./../public/img/icon-civa-footer-darkblue.svg" alt="logo civa" width="70px">&nbsp by <a href="https://www.forsoftacademy.com.br/" target="_blank">Forsoft Academy</a></strong>
+  </footer>
 </div>
 <!-- ./wrapper -->
 
-<!-- REQUIRED SCRIPTS -->
+<!-- REQUIRED SCRIPTS ------------------------------------------------------->
 
 <!-- jQuery -->
 <script src="./../public/plugins/jquery/jquery.min.js"></script>
@@ -475,14 +424,17 @@
 <script src="./../public/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- Select2 -->
 <script src="./../public/plugins/select2/js/select2.full.min.js"></script>
+
+
 <!-- AdminLTE App -->
 <script src="./../public/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="./../public/dist/js/demo.js"></script>
+
 <script>
   function tratarCampos() {
     let erro = false;
-    let campos = ['name','surname','date-birth','identity','nacionality','civa-code','postal-code','logrd-name','city','local','state', 'telf', 'email'];
+    let campos = ['name','surname','date-birth','identity','crm','nacionality','postal-code','logrd-name','city','local','state', 'telf', 'email'];
     
         for (i=0;i<campos.length;i++) {
             if (document.getElementById(campos[i]).value == '') {
@@ -505,12 +457,45 @@
 
 document.getElementById('form-meus-dados').onsubmit = tratarCampos;
 </script>
+<!-- VIACEP API -->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+  const html = {
+    get(element) {
+        return document.querySelector(element);
+    }
+}
 
+async function getUser() {
+    const campoEstado = html.get("#state");
+    const campoCidade = html.get("#city");
+    const campoBairro = html.get("#local");
+    const campoLogradouro = html.get("#logrd-name");
+    // const campoDdd = html.get("#inputDdd");
+    const cepDigitado = html.get("#postal-code");
+
+
+    const response = await axios.get(`https://viacep.com.br/ws/${cepDigitado.value}/json/`);
+    const estado = response.data.uf;
+    const cidade = response.data.localidade;
+    const bairro = response.data.bairro;
+    const logradouro = response.data.logradouro;
+    // const ddd = response.data.ddd;
+    
+
+
+
+    campoEstado.innerHTML = `<option selected="">${estado}</option>`;
+    campoCidade.innerHTML = `<option selected="">${cidade}</option>`;
+    campoBairro.innerHTML = `<option selected="">${bairro}</option>`;
+    campoLogradouro.value = `${logradouro}` ;
+    // campoDdd.value = `${ddd}`;
+};
+</script>
 <script>
   $(function () {
     $('.select2').select2()
   });
 </script>
-
 </body>
 </html>

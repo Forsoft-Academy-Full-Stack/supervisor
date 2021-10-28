@@ -12,11 +12,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
- 
-
-  <!-- Select2 -->
-  <link rel="stylesheet" href="./../public/plugins/select2/css/select2.min.css">
-
   <!-- Estilo icones -->
   <link rel="stylesheet" href="../public/plugins/fontawesome-free/css/all.min.css">
   
@@ -82,7 +77,7 @@
             </a> 
           </li>
           <!-- ITEM GERENCIAR USUARIO DO MENU -->
-          <li class="nav-item">
+          <li class="nav-item ">
             <a href="#" class="nav-link">
               <!-- <i class="nav-icon fas fa-user-friends"></i> -->
               <p>SUPERVISOR   
@@ -129,7 +124,7 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="ui049.html" class="nav-link ">
+                    <a href="ui049.html" class="nav-link">
                       <i class="fas fa-clipboard-check nav-icon"></i>
                       <p>Consultar Unidade </p>
                     </a>
@@ -137,6 +132,9 @@
                 </ul>
               </li>
             </ul>
+
+            
+          
           <!-- ITEM RELATORIO USUARIO DO MENU -->
           <li class="nav-item">
             <a href="relatoriosupervisor.html" class="nav-link">
@@ -167,7 +165,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="idioma.html" class="nav-link active"> 
+                <a href="idioma.html" class="nav-link"> 
                   <i class="far fa-circle nav-icon"></i>
                   <p>
                     Mudar Idioma
@@ -175,7 +173,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="manual.html" class="nav-link"> 
+                <a href="manual.html" class="nav-link active"> 
                   <i class="far fa-circle nav-icon"></i>
                   <p>
                     Manual CIVA
@@ -217,13 +215,13 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Mudar idioma</h1>
+            <h1 class="m-0">Manual CIVA</h1>
           </div><!-- /.col -->
 
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Voltar</a></li>
-              <li class="breadcrumb-item active">Mudar idioma</li>
+              <li class="breadcrumb-item active">Manual CIVA</li>
             </ol>
           </div>
         </div><!-- /.row -->
@@ -242,56 +240,45 @@
       <div class="container-fluid">
         <!---------------------------------------------------------------->
  
-
+<!-- PDF MANUAL CIVA -->
 <div class="row">
-  <div class="col-12">
-    <div class="card">
-      <div class="card-body">
-        <div class="form-group col-12">
-          <label for="exampleFormControlSelect1">Idioma</label>
-          <select class="select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true">
-            <option value="2" selected>Português (Brasil)</option>
-          <option value="3">English (US)</option>
-        </select>
-      </div>
-      </div>
-    </div>
+  <div class="col-12 mb-4" style="height: 700px;">
+     <iframe src="./../public/assets/manual/manual-civa.pdf"  type="application/pdf" width="100%" height="100%"></iframe>
   </div>
 </div>
-
+  
 
 <div class="row">
   <div class="col-12 mb-4">
-    <button type="submit" class="btn btn-primary btn-lg" id="salvar-idioma" form="form-meus-dados">Salvar alteração</button>
+   <a href="./../public/assets/manual/manual-civa.pdf" target="_blank"><button type="submit" class="btn btn-primary btn-lg">Abrir PDF</button></a>
 </div>
 </div>
+ 
 
 
       </div><!-- /.container-fluid -->
-            <div class="modal fade" id="modal-default" style="display: none;" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">Dados Salvo com sucesso!</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">×</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p></p>
-            </div>
-            <div class="modal-footer justify-content-between">
-              <button type="button" class="btn btn-default" data-dismiss="modal" onclick="location.href='./indexsupervisor.html'">Close</button>
-            </div>
-          </div>
-          <!-- /.modal-content -->
-        </div>
-        <!-- /.modal-dialog -->
-      </div>
     </div>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
+
+
+
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
  <!-- Main Footer -->
@@ -308,30 +295,11 @@
 <script src="./../public/plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
 <script src="./../public/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- Select2 -->
-<script src="./../public/plugins/select2/js/select2.full.min.js"></script>
 <!-- AdminLTE App -->
 <script src="./../public/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="./../public/dist/js/demo.js"></script>
-<script>
-
-function exibemodal() {
-    event.preventDefault();
-    $('#modal-default').modal('show');
-}
-
-document.getElementById('salvar-idioma').onclick = exibemodal;
-
-  $(function () {
-    $('.select2').select2()
-  });
-</script>
-<script>
-  $(function () {
-    $('.select2').select2()
-  });
-</script>
+ 
 
 </body>
 </html>

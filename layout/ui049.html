@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CIVA - Painel Unidade</title>
+  <title>CIVA - Supervisor</title>
 
   <link rel="shortcut icon" href="./../public/img/favicon-gs.svg" type="image/x-icon">
 
@@ -23,7 +23,6 @@
   <!-- Estilo pagina -->
   <link rel="stylesheet" href="./../public/dist/css/adminlte.min.css">
 
-
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -38,7 +37,7 @@
         </a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="" class="nav-link"> Painel Unidade</a>
+        <a href="" class="nav-link">Gerenciar Unidade</a>
       </li>
     </ul>
   </nav>
@@ -51,7 +50,7 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
-      <img src="./img/favicon-gs.svg" alt="AdminLTE Logo" class="brand-image img-circle" style="opacity: .8">
+      <img src="./../public/img/favicon-gs.svg" alt="AdminLTE Logo" class="brand-image img-circle" style="opacity: .8">
       <span class="brand-text font-weight-light">CIVA</span>
     </a>
 
@@ -74,7 +73,7 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- ITENS DO MENU -->
           <li class="nav-item">
-            <a href="_index_supervisor.html" class="nav-link">
+            <a href="indexsupervisor.html" class="nav-link">
               <i class="nav-icon fas fa-home"></i>
               <p>
                 Home 
@@ -100,13 +99,13 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="_ui043.html" class="nav-link ">
+                    <a href="ui043.html" class="nav-link ">
                       <i class="fas fa-clipboard-check nav-icon"></i>
                       <p>Consultar Profissional </p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="_ui044.html" class="nav-link">
+                    <a href="ui044.html" class="nav-link">
                       <i class="fas fa-user-plus nav-icon"></i>
                       <p>Cadastrar Profissional </p>
                     </a>
@@ -138,7 +137,7 @@
             </ul>  
           <!-- ITEM RELATORIO USUARIO DO MENU -->
           <li class="nav-item">
-            <a href="_relatorio_supervisor.html" class="nav-link">
+            <a href="relatoriosupervisor.html" class="nav-link">
               <i class="nav-icon fas fa-chart-pie"></i>
               <p>
                 Relatorio
@@ -158,7 +157,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="_meus_dados_supervisor.html" class="nav-link">
+                <a href="meusdadossupervisor.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i> 
                   <p>
                     Meus dados
@@ -166,7 +165,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="_idioma.html" class="nav-link"> 
+                <a href="idioma.html" class="nav-link"> 
                   <i class="far fa-circle nav-icon"></i>
                   <p>
                     Mudar Idioma
@@ -174,7 +173,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="_manual.html" class="nav-link"> 
+                <a href="manual.html" class="nav-link"> 
                   <i class="far fa-circle nav-icon"></i>
                   <p>
                     Manual CIVA
@@ -182,7 +181,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="_solicitacoes_supervisor.html" class="nav-link"> 
+                <a href="solicitacoessupervisor.html" class="nav-link"> 
                   <i class="far fa-circle nav-icon"></i>
                   <p>
                     Solicitações pendentes
@@ -211,29 +210,25 @@
 
   <!-- Content Wrapper. Contains page content -------------------------->
   <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
+ 
+
+  <!-- Content Header (Page header) -->
     <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Painel Unidade</h1>
+            <h1 class="m-0">Pesquisar Unidade</h1>
           </div><!-- /.col -->
 
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Voltar</a></li>
-              <li class="breadcrumb-item active">Painel Unidade</li>
+              <li class="breadcrumb-item active">Consultar Unidade</li>
             </ol>
           </div>
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
     </div>
-    <!-- /.content-header ---------------------------------------------->
-
-
-
-
-
 
 
     <!-- Main content -->
@@ -241,215 +236,178 @@
       <div class="container-fluid">
         <!---------------------------------------------------------------->
 
-
-
-<div class="row">
-  <div class="col-12 mb-3">
   
-  
-<div class="card card-primary">
-<div class="card-header">
-  <h3 class="card-title">Meus dados</h3>
-</div>
-<!-- /.card-header -->
-<!-- form start -->
-<form id="form-meus-dados">
-    <div class="p-2">
-    <div class="row">
-        <div class="form-group col-xl-6">
-            <label for="exampleFormControlInput1">Nome</label>
-            <input type="text" class="form-control" value="Hospital Pan" id="nome-unidade" disabled>
-        </div>
-        <div class="form-group col-xl-6">
-            <label for="exampleFormControlInput1">ID Unidade</label>
-            <input type="text" class="form-control" value="123456789" id="id-unidade" disabled>
-        </div>
-    </div>
-    <div class="row">
-      <div class="form-group col-6">
-          <label for="exampleFormControlInput1">CEP</label>
-          <input type="text" class="form-control" id="postal-code" value="22758-006" disabled>
-      </div>
-    </div>
-    <div class="row">
-    <div class="form-group col-12">
-      <label for="exampleFormControlSelect1">Logradouro</label>
-        <label for="exampleFormControlInput1"></label>
-        <input type="email" class="form-control" id="logrd-name" value="Av Rio Branco" disabled>
-    </div>
-    </div>
-    
-    <div class="row">
-    
-    <div class="form-group col-xl-6">
-      <label for="exampleFormControlSelect1">Municipio</label>
-      <select disabled class="select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true">
-        <option  >Selecionar</option> 
-        <option selected>Niteroi</option>
-        <option>São Gonçalo</option>
-        <option>Rio de Janeiro</option>
-        <option>Itaborai</option>
-        <option>Marica</option>
-    </select>
-    </div>
-    <div class="form-group col-xl-6">
-    <label for="exampleFormControlSelect1">Bairro</label>
-    <select disabled class="select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true">
-      <option  >Selecionar</option> 
-      <option selected>Niteroi</option>
-      <option>São Gonçalo</option>
-      <option>Rio de Janeiro</option>
-      <option>Itaborai</option>
-      <option>Marica</option>
-    </select>
-    </div>
-    
-    
-    </div>
-    
-    <div class="row">
-      <div class="form-group col-12">
-          <label for="exampleFormControlSelect1">Estado</label>
-          <select disabled class="select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true">
-            <option>Selecionar</option>
-            <option selected>Rio de Janeiro</option>
-            <option>São Paulo</option>
-            <option>Minas Gerais</option>
-            <option>Rio Grande do Sul</option>
-            <option>Bahia</option>
-        </select>
-      </div>
-    </div>
-    <hr>
-    <div class="row">
-      <div class="form-group col-xl-6">
-          <label for="exampleFormControlInput1">Contato</label>
-            <input type="text" class="form-control" id="telf" value="+55 21 9 8788-9894" disabled>
-      </div>
-      <div class="form-group col-6">
-        <label for="exampleFormControlSelect1">Locação</label>
-        <select disabled class="select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true">
-          <option>Selecionar</option>
-          <option selected>Fixa</option>
-      </select>
-    </div>
-    </div>
-    <div class="row"> 
-      <div class="form-group col-6">
-        <label for="exampleFormControlSelect1">Natureza</label>
-          <label for="exampleFormControlInput1"></label>
-          <input type="text" class="form-control" id="natureza" value="Pública" disabled>
-      </div>
-      <div class="form-group col-6">
-        <label for="exampleFormControlSelect1">Tipo de Estabelecimento</label>
-          <label for="exampleFormControlInput1"></label>
-          <input type="text" class="form-control" id="tipo-estabelecimento" value="Hospital" disabled>
-      </div>
-  </div>
-</div>
-</div>
-  </div>
-                  <!-- /.row -->
-        </div>
+        <!-- PESQUISA E FILTRO -->
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                 
+                
+                <div class="row">
+                  <div class="row col-md-12 col-sm-12">
+                    <div class="col-xl-2 col-sm-12 mb-2">
+                      <select class="select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                        <option value="1">Nome A - Z</option>
+                        <option value="2">Nome Z - A</option>
+                        <option value="3">CPF crescente</option>
+                        <option value="3">CPF decrescente</option>
+                    </select>
+                    </div>
+                    
+                    <div class="col-xl-8 col-sm-12">
+                      <div class="input-group  mb-2">
+                        <input type="text" class="form-control" placeholder="Pesquisar portador">
+                        <div class="input-group-append">
+                          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Pesquisar Unidade</button>
+                        </div>
+                      </div>
+                    </div>
 
+                    <div class="col-2"> 
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default">CSV</button>
+                          <button type="button" class="btn btn-default">PDF</button>
+                          <button type="button" class="btn btn-default">Excel</button>
+                        </div>
+                       
+                    </div>
 
-        <!-- TABELA VACINAS -->
-<div class="row">
-  <div class="col-12 mb-2">
-    <div class="card card-primary">
-      <div class="card-header">
-        <h3 class="card-title">Gestor Vinculados</h3>
-
-        <div class="card-tools">
-          <div class="input-group input-group-sm" style="width: 150px;">
-            
-            <div class="input-group-append">
+                    
+                  </div>
+              </div>
+         
               
-              
+
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- /.card-header -->
-      <div class="card-body table-responsive p-0">
-        <table class="table table-hover text-nowrap">
-          <thead>
-            <tr>
-              <th>Nome</th>
-              <th>Identidade</th>
-              <th>Código CIVA</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Maria Souza da Silva</td>
-              <td>123.159.875-05</td>
-              <td>BRA5521123456789</td>    
-            </tr>
-            <tr>
-              <td>Maria Souza da Silva</td>
-              <td>123.159.875-05</td>
-              <td>BRA5521123456789</td>    
-            </tr>
-            <tr>
-              <td>Maria Souza da Silva</td>
-              <td>123.159.875-05</td>
-              <td>BRA5521123456789</td>    
-            </tr>
-            <tr>
-              <td>Maria Souza da Silva</td>
-              <td>123.159.875-05</td>
-              <td>BRA5521123456789</td>    
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <!-- /.card-body -->
-    </div>
-  </div>
-</div>
 
-<div class="row">
-  <div class="col-12 mb-4">
-    <button type="submit" class="btn btn-primary btn-lg" form="form-meus-dados">Salvar</button>
+        <!-- TABELA -->
+        <div class="row">
+ 
+
+          <div class="col-12">
+          
+            <div class="card">
+               
+              <!-- /.card-header -->
+              <div class="card-body table-responsive p-0">
+                <table class="table table-hover text-nowrap">
+                  <thead>
+                    <tr>
+                      <th>Nome</th>
+                      <th>Estado</th>
+                      <th>Municipio</th>
+                      <th>CEP</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Av Rio branco</td>
+                      <td>Rio de Janeiro</td>
+                      <td>Rio de janeiro</td>
+                      <td>50120-320</td>
+                      <td><a href="ui050.html" class="btn btn-block btn-primary btn-sm">Gerenciar</a></td>
+                    </tr>
+                    <tr>
+                      <td>Av Rio branco</td>
+                      <td>Rio de Janeiro</td>
+                      <td>Rio de janeiro</td>
+                      <td>50120-320</td>
+                      <td><a href="ui050.html" class="btn btn-block btn-primary btn-sm">Gerenciar</a></td>
+                    </tr>
+                    <tr>
+                      <td>Av Rio branco</td>
+                      <td>Rio de Janeiro</td>
+                      <td>Rio de janeiro</td>
+                      <td>50120-320</td>
+                      <td><a href="ui050.html" class="btn btn-block btn-primary btn-sm">Gerenciar</a></td>
+                    </tr>
+                    <tr>
+                      <td>Av Rio branco</td>
+                      <td>Rio de Janeiro</td>
+                      <td>Rio de janeiro</td>
+                      <td>50120-320</td>
+                      <td><a href="ui050.html" class="btn btn-block btn-primary btn-sm">Gerenciar</a></td>
+                    </tr>
+                    <tr>
+                      <td>Av Rio branco</td>
+                      <td>Rio de Janeiro</td>
+                      <td>Rio de janeiro</td>
+                      <td>50120-320</td>
+                      <td><a href="ui050.html" class="btn btn-block btn-primary btn-sm">Gerenciar</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+
+
+
+
+              </div>
+              <!-- /.card-body -->
+
+            </div>
+
+          </div>
+      
+        </div>
+
+<!-- PAGINAÇÃO -->
+<div class="row">      
+    <div class="col-6">
+                
+          <div class="dataTables_paginate paging_simple_numbers" id="example2_paginate">  
+                <ul class="pagination"><li class="paginate_button page-item previous disabled" id="example2_previous">
+                  <a href="#" aria-controls="example2" data-dt-idx="0" tabindex="0" class="page-link">Anterior</a></li>
+                  
+                  <li class="paginate_button page-item active"><a href="#" aria-controls="example2" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item "><a href="#" aria-controls="example2" data-dt-idx="2" tabindex="0" class="page-link">2</a></li>
+                  <li class="paginate_button page-item "><a href="#" aria-controls="example2" data-dt-idx="3" tabindex="0" class="page-link">3</a></li>
+                  <li class="paginate_button page-item "><a href="#" aria-controls="example2" data-dt-idx="4" tabindex="0" class="page-link">4</a></li>
+                  <li class="paginate_button page-item "><a href="#" aria-controls="example2" data-dt-idx="5" tabindex="0" class="page-link">5</a></li>
+                  <li class="paginate_button page-item "><a href="#" aria-controls="example2" data-dt-idx="6" tabindex="0" class="page-link">6</a></li>
+                  <li class="paginate_button page-item next" id="example2_next"><a href="#" aria-controls="example2" data-dt-idx="7" tabindex="0" class="page-link">Próximo</a></li></ul>
+            </div>
 </div>
 </div>
+        
+  
+
+
+
+ 
+
+        <!-- /.row -->
       </div><!-- /.container-fluid -->
-      <div class="modal fade" id="modal-default" style="display: none;" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">Dados Salvos com sucesso!</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">×</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p></p>
-            </div>
-            <div class="modal-footer justify-content-between">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-          <!-- /.modal-content -->
-        </div>
-        <!-- /.modal-dialog -->
-      </div>
     </div>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
 
 
- <!-- Main Footer -->
- <footer class="main-footer">
-  <!-- Default to the left -->
-  <strong><img src="./../public/img/icon-civa-footer-darkblue.svg" alt="logo civa" width="70px">&nbsp by <a href="https://www.forsoftacademy.com.br/" target="_blank">Forsoft Academy</a></strong>
-</footer>
+
+  
+ 
+
+
+
+
+
+
+
+
+   <!-- Main Footer -->
+   <footer class="main-footer">
+    <!-- Default to the left -->
+    <strong><img src="./../public/img/icon-civa-footer-darkblue.svg" alt="logo civa" width="70px">&nbsp by <a href="https://www.forsoftacademy.com.br/" target="_blank">Forsoft Academy</a></strong>
+  </footer>
 </div>
 <!-- ./wrapper -->
 
-<!-- REQUIRED SCRIPTS -->
+<!-- REQUIRED SCRIPTS ------------------------------------------------------->
 
 <!-- jQuery -->
 <script src="./../public/plugins/jquery/jquery.min.js"></script>
@@ -457,23 +415,17 @@
 <script src="./../public/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- Select2 -->
 <script src="./../public/plugins/select2/js/select2.full.min.js"></script>
+
+
 <!-- AdminLTE App -->
 <script src="./../public/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="./../public/dist/js/demo.js"></script>
-<script>
-  function exibemodal() {
-    event.preventDefault();
-    $('#modal-default').modal('show');
-}
 
-document.getElementById('form-meus-dados').onsubmit = exibemodal;
-</script>
 <script>
   $(function () {
     $('.select2').select2()
   });
 </script>
-
 </body>
 </html>

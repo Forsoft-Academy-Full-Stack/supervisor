@@ -56,7 +56,7 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
-      <img src="./../public/img/favicon-gs.svg" alt="AdminLTE Logo" class="brand-image img-circle" style="opacity: .8">
+      <img src="./img/favicon-gs.svg" alt="AdminLTE Logo" class="brand-image img-circle" style="opacity: .8">
       <span class="brand-text font-weight-light">CIVA</span>
     </a>
 
@@ -65,7 +65,7 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="./../public/img/no-user.svg" class="img-circle elevation-2" alt="User Image">
+          <img src="./img/no-user.svg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block">Marlon Brendo</a>
@@ -79,7 +79,7 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- ITENS DO MENU -->
           <li class="nav-item">
-            <a href="_index_supervisor.html" class="nav-link">
+            <a href="indexsupervisor.html" class="nav-link">
               <i class="nav-icon fas fa-home"></i>
               <p>
                 Home 
@@ -92,6 +92,7 @@
               <!-- <i class="nav-icon fas fa-user-friends"></i> -->
               <p>SUPERVISOR   
                 <i class="right fas fa-angle-left"></i>
+                
               </p>
             </a>
             <ul class="nav nav-treeview">
@@ -105,13 +106,13 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="_ui043.html" class="nav-link ">
+                    <a href="ui043.html" class="nav-link   active">
                       <i class="fas fa-clipboard-check nav-icon"></i>
                       <p>Consultar Profissional </p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="_ui044.html" class="nav-link active">
+                    <a href="ui044.html" class="nav-link">
                       <i class="fas fa-user-plus nav-icon"></i>
                       <p>Cadastrar Profissional </p>
                     </a>
@@ -133,7 +134,7 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="_ui049.html" class="nav-link  active">
+                    <a href="ui049.html" class="nav-link  active">
                       <i class="fas fa-clipboard-check nav-icon"></i>
                       <p>Consultar Unidade </p>
                     </a>
@@ -143,7 +144,7 @@
             </ul>
           <!-- ITEM RELATORIO USUARIO DO MENU -->
           <li class="nav-item">
-            <a href="_relatorio_supervisor.html" class="nav-link">
+            <a href="relatoriosupervisor.html" class="nav-link">
               <i class="nav-icon fas fa-chart-pie"></i>
               <p>
                 Relatorio
@@ -163,7 +164,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="_meus_dados_supervisor.html" class="nav-link">
+                <a href="meusdadossupervisor.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i> 
                   <p>
                     Meus dados
@@ -171,7 +172,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="_idioma.html" class="nav-link"> 
+                <a href="idioma.html" class="nav-link"> 
                   <i class="far fa-circle nav-icon"></i>
                   <p>
                     Mudar Idioma
@@ -179,7 +180,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="_manual.html" class="nav-link"> 
+                <a href="manual.html" class="nav-link"> 
                   <i class="far fa-circle nav-icon"></i>
                   <p>
                     Manual CIVA
@@ -187,7 +188,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="_solicitacoes_supervisor.html" class="nav-link"> 
+                <a href="solicitacoessupervisor.html" class="nav-link"> 
                   <i class="far fa-circle nav-icon"></i>
                   <p>
                     Solicitações pendentes
@@ -221,13 +222,13 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Cadastrar Profissional de Saúde</h1>
+            <h1 class="m-0">Vincular Unidade</h1>
           </div><!-- /.col -->
 
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Voltar</a></li>
-              <li class="breadcrumb-item active">Cadastrar Profissional de Saude</li>
+              <li class="breadcrumb-item active">Vincular Unidade</li>
             </ol>
           </div>
         </div><!-- /.row -->
@@ -253,84 +254,57 @@
           
 <div class="card card-primary">
 <div class="card-header">
-<h3 class="card-title">Dados Profissional de Saúde</h3>
+<h3 class="card-title">Dados Unidade</h3>
 </div>
 <!-- /.card-header -->
 <!-- form start -->
-<form id="form-meus-dados" action="#">
+<form id="form-meus-dados">
 <div class="p-2">
+  <div class="row">
+    <div class="form-group col-xl-6">
+      <label for="exampleFormControlInput1">ID Unidade</label>
+      <input type="text" class="form-control" id="name" value="1234567">
+    </div>
+  </div>
+  <hr>
 <div class="row">
   <div class="form-group col-xl-6">
       <label for="exampleFormControlInput1">Nome</label>
-      <input type="text" class="form-control" id="name">
+      <input type="text" class="form-control" id="name" value="Hospital" disabled>
   </div>
   <div class="form-group col-xl-6">
-      <label for="exampleFormControlInput1">Sobrenome</label>
-      <input type="text" class="form-control" id="surname" >
-  </div>
-</div>
-<div class="row">
-<div class="form-group col-xl-6">
-  <label for="exampleFormControlInput1">Data de nascimento</label>
-  <input type="date" class="form-control" id="date-birth" placeholder="00/00/0000">
-</div>
-  <div class="form-group col-xl-6">
-      <label for="exampleFormControlInput1">Identidade</label>
-      <input type="text" class="form-control" id="identity" >
-  </div>
-  <div class="form-group col-xl-6">
-    <label for="exampleFormControlInput1">CRM</label>
-    <input type="text" class="form-control" id="crm" >
-</div>
-</div>
-<div class="row">
-<div class="form-group col-12">
-  <label for="exampleFormControlSelect1">Nacionalidade</label>
-  <select class="select2 select2-hidden-accessible" id="nacionality" style="width: 100%;" tabindex="-1" aria-hidden="true">
-    <option selected disabled>Selecionar</option>
-    <option value="2">Brasil</option>
-    <option value="3">Eua</option>
-    <option value="3">Canada</option>
-</select>
-</div>
-</div>
-<hr>
-<div class="row">
-  <div class="form-group col-12">
-      <label for="exampleFormControlInput1">CEP</label>
-      <input type="text" class="form-control" id="postal-code" onblur="getUser(); return false">
+    <label for="exampleFormControlInput1">CEP</label>
+    <input type="text" class="form-control" id="postal-code" value="1234567" disabled>
   </div>
 </div>
 
-<div class="row"> 
+<div class="row">
   <div class="form-group col-12">
     <label for="exampleFormControlSelect1">Logradouro</label>
-      <label for="exampleFormControlInput1"></label>
-      <input type="text" class="form-control" id="logrd-name">
+    <label for="exampleFormControlInput1"></label>
+    <input type="text" class="form-control" id="logrd-name" value="Rua algo" disabled>
   </div>
 </div>
-
-
 <div class="row">
-
-
 <div class="form-group col-xl-6">
-<label for="local">Bairro</label>
-<select class="select2 select2-hidden-accessible" id="local" style="width: 100%;" tabindex="-1" aria-hidden="true">
-  <option id="local-option" selected="" disabled="">Selecionar</option> 
-  <option>Niteroi</option>
-  <option>São Gonçalo</option>
-  <option>Rio de Janeiro</option>
-  <option>Itaborai</option>
-  <option>Marica</option>
-</select>
+  <label for="exampleFormControlSelect1">Bairro</label>
+  <select class="select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true" disabled>
+    <option selected disabled>Selecionar</option>
+    <option>Niteroi</option>
+    <option>São Gonçalo</option>
+    <option>Rio de Janeiro</option>
+    <option>Itaborai</option>
+    <option>Marica</option>
+  </select>
 </div>
 
 
+
+
 <div class="form-group col-xl-6">
-  <label for="city">Municipio</label>
-  <select class="select2 select2-hidden-accessible"  id="city" style="width: 100%;" tabindex="-1" aria-hidden="true">
-    <option id="city-option" selected="" disabled="" >Selecionar</option> 
+  <label for="exampleFormControlSelect1">Municipio</label>
+  <select class="select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true" disabled>
+    <option selected disabled>Selecionar</option> 
     <option>Niteroi</option>
     <option>São Gonçalo</option>
     <option>Rio de Janeiro</option>
@@ -342,9 +316,10 @@
 
 <div class="row">
   <div class="form-group col-12">
-      <label for="state">Estado</label>
-      <select class="select2 select2-hidden-accessible" id="state" style="width: 100%;" tabindex="-1" aria-hidden="true">
-        <option id="state-option" selected="" disabled="">Selecionar</option>
+      <label for="exampleFormControlSelect1">Estado</label>
+      <select class="select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true" disabled>
+        <option selected disabled>Selecionar</option> 
+        <option>Selecionar</option>
         <option>Rio de Janeiro</option>
         <option>São Paulo</option>
         <option>Minas Gerais</option>
@@ -353,16 +328,30 @@
     </select>
   </div>
 </div>
-
-<hr>
 <div class="row">
   <div class="form-group col-xl-6">
       <label for="exampleFormControlInput1">Contato</label>
-        <input type="text" class="form-control" id="telf">
+        <input type="text" class="form-control" id="telf" value="21987654321" disabled>
   </div>
+<div class="form-group col-xl-6">
+  <label for="exampleFormControlSelect1">Locação</label>
+  <select class="select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true" disabled>
+    <option selected disabled>Fixa</option>
+    <option>Movel</option>
+  </select>
+</div>
+</div>
+<div class="row">
+<div class="form-group col-xl-6">
+  <label for="exampleFormControlSelect1">Locação</label>
+  <select class="select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true" disabled>
+    <option selected disabled>Pública</option>
+    <option>Privada</option>
+  </select>
+</div>
   <div class="form-group col-xl-6">
-      <label for="exampleFormControlInput1">Email</label>
-      <input type="email" class="form-control" id="email">
+    <label for="exampleFormControlInput1">Tipo de Estabelecimento</label>
+    <input type="text" class="form-control" id="postal-code" value="Hospital" disabled>
   </div>
 </div>
 </div>
@@ -371,7 +360,7 @@
           
 
             <div class="col-12 mb-4">
-                <button type="submit" class="btn btn-primary btn-lg" form="form-meus-dados">Cadastrar</button>
+                <button type="submit" class="btn btn-primary btn-lg" form="form-meus-dados">Adicionar</button>
             </div>
         
         
@@ -381,11 +370,11 @@
 
         <!-- /.row -->
       </div><!-- /.container-fluid -->
-            <div class="modal fade" id="modal-default" style="display: none;" aria-hidden="true">
+      <div class="modal fade" id="modal-default" style="display: none;" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title">Cadastro realizado com sucesso!</h4>
+              <h4 class="modal-title">Unidade vinculada com sucesso!</h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">×</span>
               </button>
@@ -394,14 +383,36 @@
               <p></p>
             </div>
             <div class="modal-footer justify-content-between">
-              <button type="button" class="btn btn-default" data-dismiss="modal" onclick="location.href='./_index_supervisor.html'">Close</button>
+              <button type="button" class="btn btn-default" data-dismiss="modal" onclick="location.href='./ui045.html'">Close</button>
             </div>
           </div>
           <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
     </div>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
+
+
+
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <!-- Main Footer -->
   <footer class="main-footer">
     <!-- Default to the left -->
@@ -424,67 +435,13 @@
 <script src="./../public/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="./../public/dist/js/demo.js"></script>
-
 <script>
-  function tratarCampos() {
-    let erro = false;
-    let campos = ['name','surname','date-birth','identity','crm','nacionality','postal-code','logrd-name','city','local','state', 'telf', 'email'];
-    
-        for (i=0;i<campos.length;i++) {
-            if (document.getElementById(campos[i]).value == '') {
-                erro = true;
-            }
-        }
+  function exibemodal() {
+    event.preventDefault();
+    $('#modal-default').modal('show');
+  }
 
-        if (erro) {
-            alert('Todos os campos devem ser preenchidos!');
-        } else {
-            // Exibe o modal desejado, baseado no id definido.
-            $('#modal-default').modal('show');
-            console.log('funcionou');
-            event.preventDefault();
-
-        }
-
-        return !erro;
-}
-
-document.getElementById('form-meus-dados').onsubmit = tratarCampos;
-</script>
-<!-- VIACEP API -->
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<script>
-  const html = {
-    get(element) {
-        return document.querySelector(element);
-    }
-}
-
-async function getUser() {
-    const campoEstado = html.get("#state");
-    const campoCidade = html.get("#city");
-    const campoBairro = html.get("#local");
-    const campoLogradouro = html.get("#logrd-name");
-    // const campoDdd = html.get("#inputDdd");
-    const cepDigitado = html.get("#postal-code");
-
-
-    const response = await axios.get(`https://viacep.com.br/ws/${cepDigitado.value}/json/`);
-    const estado = response.data.uf;
-    const cidade = response.data.localidade;
-    const bairro = response.data.bairro;
-    const logradouro = response.data.logradouro;
-    // const ddd = response.data.ddd;
-    
-
-
-
-    campoEstado.innerHTML = `<option selected="">${estado}</option>`;
-    campoCidade.innerHTML = `<option selected="">${cidade}</option>`;
-    campoBairro.innerHTML = `<option selected="">${bairro}</option>`;
-    campoLogradouro.value = `${logradouro}` ;
-    // campoDdd.value = `${ddd}`;
-};
+  document.getElementById('form-meus-dados').onsubmit = exibemodal;
 </script>
 <script>
   $(function () {
